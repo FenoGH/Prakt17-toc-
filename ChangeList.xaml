@@ -1,0 +1,26 @@
+﻿<Window x:Class="Prakt17.ChangeList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakt17"
+        mc:Ignorable="d"
+        Title="ChangeList" Height="500" Width="300" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Наименование лекартсва" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Цена" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Колличество" HorizontalAlignment="Left" Margin="20,173,0,0" VerticalAlignment="Top"/>
+        <Label Content="Произведено" HorizontalAlignment="Left" Margin="20,242,0,0" VerticalAlignment="Top"/>
+        <Label Content="Годен до" HorizontalAlignment="Left" Margin="171,242,0,0" VerticalAlignment="Top"/>
+        <Label Content="Фирма" HorizontalAlignment="Left" Margin="20,335,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.477,-1.541"/>
+        <TextBox x:Name="NameDrug" HorizontalAlignment="Left" Margin="20,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PriceDrug" HorizontalAlignment="Left" Margin="20,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="QuantityDrug" HorizontalAlignment="Left" Margin="20,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="CreatedDrug" HorizontalAlignment="Left" Margin="20,273,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="experationdrug" HorizontalAlignment="Left" Margin="151,273,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FirmDrug" HorizontalAlignment="Left" Margin="20,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Upload" Content="Обновить" HorizontalAlignment="Left" Margin="22,416,0,0" VerticalAlignment="Top" Width="68" Height="32" Click="Upload_Click"/>
+        <Button x:Name="CancelDb" Content="Отмена" HorizontalAlignment="Left" Margin="201,416,0,0" VerticalAlignment="Top" Width="68" Height="32" Click="CancelDb_Click"/>
+
+    </Grid>
+</Window>
